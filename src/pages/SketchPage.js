@@ -32,8 +32,8 @@ const SketchPage = () => {
       <div className="h-[2px] w-[100px] bg-red-400 mb-3"/>
       <p className="font-light">{sketch.description}</p>
 
-      <div className="grid grid-cols-5 mt-10">
-        <div className="border-[1px] col-span-2 flex justify-center items-center">
+      <div className="grid md:grid-cols-5 grid-cols-1 mt-10">
+        <div className="border-[1px] md:col-span-2 col-span-1 flex justify-center items-center">
           {sketchIndex.map((item) => (
             <div>
               {slug === item.slug && <SketchContainer  setup={item.sketch.setup} draw={item.sketch.draw} />}
@@ -41,7 +41,7 @@ const SketchPage = () => {
           ))}
         </div>
 
-        <div className="col-span-3">
+        <div className="md:col-span-3 col-span-1">
           <ReactMarkdown children={markdown} />
         </div>
       </div>
