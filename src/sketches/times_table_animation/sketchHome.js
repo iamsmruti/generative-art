@@ -1,5 +1,5 @@
 let factor = 2
-let totalPoints = 400
+let totalPoints = 100
 let radius
 
 const setup = (p5, canvasParentRef) => {
@@ -32,7 +32,6 @@ const draw = (p5) => {
   factor += 0.05
 
   for(let i = 0; i < totalPoints; i++){
-    p5.circle(getVector(i, p5).x, getVector(i, p5).y, 5)
     p5.line(getVector(i, p5).x, getVector(i, p5).y, getVector(i * factor, p5).x, getVector(i*factor, p5).y)
   }
 }
