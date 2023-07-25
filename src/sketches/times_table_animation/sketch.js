@@ -3,7 +3,11 @@ let totalPoints = 200
 let radius
 
 const setup = (p5, canvasParentRef) => {
-  p5.createCanvas(500, 500).parent(canvasParentRef);
+  if(p5.displayWidth < 500){
+    p5.createCanvas(350, 350).parent(canvasParentRef);
+  } else {
+    p5.createCanvas(500, 500).parent(canvasParentRef);
+  }
   radius = p5.width/2 - 20
 };
 
