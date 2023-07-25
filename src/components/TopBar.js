@@ -25,7 +25,7 @@ const TopBar = () => {
         {menuItems.map((item) => {
           if(item.path === pathname){
             return (
-              <div onClick={() => {
+              <div className="cursor-pointer" onClick={() => {
                 navigate(item.path)
                 navigate(0)
               }}>
@@ -34,7 +34,7 @@ const TopBar = () => {
             )
           } else {
             return (
-              <div onClick={() => {
+              <div className="cursor-pointer" onClick={() => {
                 navigate(item.path)
                 navigate(0)
               }}>

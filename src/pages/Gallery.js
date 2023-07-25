@@ -15,7 +15,7 @@ const Gallery = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
         {sketchIndex.map((item) => (
           <div className="p-1 border-[1px]">
-            <div onClick={() => {
+            <div className="cursor-pointer" onClick={() => {
               navigate(`/sketch/${item.slug}`)
               navigate(0)
             }}>
@@ -23,7 +23,7 @@ const Gallery = () => {
             </div>
 
             <div className="p-2">
-              <div onClick={() => {
+              <div className="cursor-pointer w-fit" onClick={() => {
                 navigate(`/sketch/${item.slug}`)
                 navigate(0)
               }}>
@@ -35,7 +35,7 @@ const Gallery = () => {
                 {item.description}
               </p>
 
-              <div onClick={() => {
+              <div className="cursor-pointer" onClick={() => {
                 navigate(`/sketch/${item.slug}`)
                 navigate(0)
               }}>

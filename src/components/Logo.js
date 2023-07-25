@@ -4,7 +4,7 @@ import React from 'react'
 const Logo = () => {
   const navigate = useNavigate()
   return (
-    <div onClick={() => {
+    <div className="cursor-pointer" onClick={() => {
       navigate('/')
       navigate(0)
     }}>

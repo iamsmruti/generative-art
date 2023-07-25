@@ -12,3 +12,15 @@
   box-sizing: border-box;
   font-family: 'Poppins', 'Helvetica Neue';
 }
+
+.markdown > * {
+  all: revert;
+}
+
+.markdown > p {
+  font-weight: 300;
+}
+
+.markdown > b {
+  font-weight: 500;
+}
