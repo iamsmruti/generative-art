@@ -1,5 +1,5 @@
 import React from 'react'
-import timesTableAnimation from '../sketches/times_table_animation/sketch'
+import timesTableAnimation from '../sketches/times_table_animation/sketchHome'
 import Sketch from "react-p5"
 import { Link } from "react-router-dom"
 

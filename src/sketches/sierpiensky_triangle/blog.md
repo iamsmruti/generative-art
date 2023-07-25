@@ -10,9 +10,6 @@ At its core, the Sierpiensky Triangle is an equilateral triangle divided into fo
 We can use p5.js to code the pattern. p5 is a javascript library for drawing and animation. Here is the following code.
 
 ```js
-let x = 50;
-let y = 50;
-
 const setup = (canvasParentRef) => {
   createCanvas(500, 500).parent(canvasParentRef);
   background(255);
@@ -28,15 +25,15 @@ const drawRect = (x,y,d) => {
 
   setTimeout(() => {
     drawRect(x, y - d/2, d/2);
-  }, 50)
+  }, 10)
 
   setTimeout(() => {
     drawRect(x + d/2, y, d/2);
-  }, 70)
+  }, 20)
 
   setTimeout(() => {
     drawRect(x - d/2, y, d/2);
-  }, 90)
+  }, 30)
 }
 
 const draw = (p5) => {

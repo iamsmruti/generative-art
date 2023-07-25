@@ -1,6 +1,3 @@
-let x = 50;
-let y = 50;
-
 const setup = (p5, canvasParentRef) => {
   p5.createCanvas(500, 500).parent(canvasParentRef);
   p5.background(255);
@@ -16,15 +13,15 @@ const drawRect = (p5,x,y,d) => {
 
   setTimeout(() => {
     drawRect(p5, x, y - d/2, d/2);
-  }, 50)
+  }, 10)
 
   setTimeout(() => {
     drawRect(p5, x + d/2, y, d/2);
-  }, 70)
+  }, 20)
 
   setTimeout(() => {
     drawRect(p5, x - d/2, y, d/2);
-  }, 90)
+  }, 30)
 }
 
 const draw = (p5) => {

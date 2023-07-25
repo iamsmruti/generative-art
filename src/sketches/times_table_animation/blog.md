@@ -4,7 +4,7 @@ The **Times Table Animation** holds a surprising secret beyond its educational b
 
 ```js
 let factor = 2
-let totalPoints = 10
+let totalPoints = 400
 let radius
 
 const setup = () => {
@@ -29,8 +29,8 @@ const draw = () => {
   translate(width/2, height/2)
   circle(0, 0, radius*2)
 
-  if(factor < 350)
-  factor += 0.01
+  if(factor < 10)
+  factor += 0.03
 
   for(let i = 0; i < totalPoints; i++){
     circle(getVector(i).x , getVector(i).y, 5)

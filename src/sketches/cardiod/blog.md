@@ -29,8 +29,8 @@ const draw = () => {
   translate(width/2, height/2)
   circle(0, 0, radius*2)
 
-  if(totalPoints < 350)
-  totalPoints += 0.1
+  if(totalPoints < 200)
+  totalPoints += 0.5
 
   for(let i = 0; i < totalPoints; i++){
     circle(getVector(i).x , getVector(i).y, 5)

@@ -29,8 +29,8 @@ const draw = (p5) => {
   p5.translate(p5.width/2, p5.height/2)
   p5.circle(0, 0, radius*2)
 
-  if(totalPoints < 350)
-  totalPoints += 0.1
+  if(totalPoints < 200)
+  totalPoints += 0.5
 
   for(let i = 0; i < totalPoints; i++){
     p5.circle(getVector(i, p5).x, getVector(i, p5).y, 5)
