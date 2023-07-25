@@ -1,5 +1,5 @@
 let factor = 2
-let totalPoints = 100
+let totalPoints = 150
 let radius
 
 const setup = (p5, canvasParentRef) => {
