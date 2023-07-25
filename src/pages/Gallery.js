@@ -1,19 +1,40 @@
-import React, { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FcSearch } from 'react-icons/fc'
 
 import { sketchIndex } from "../sketches";
 
 const Gallery = () => {
   const navigate = useNavigate()
+  const [searchQuery, setSearchQuery] = useState('')
+  const [filteredSearch, setFilteredSearch] = useState([])
+
+  useEffect(() => {
+    setFilteredSearch(sketchIndex)
+  }, [])
+
+  useEffect(() => {
+    console.log(searchQuery)
+
+    if(searchQuery !== '')
+      setFilteredSearch(sketchIndex.filter((item) => {
+        if(item.name.toLocaleLowerCase().includes(searchQuery)){
+          return item
+        }
+      }))
+    else {
+      setFilteredSearch(sketchIndex)
+    }
+  }, [searchQuery])
+
   return (
     <div>
       <div className="mb-5 flex items-center">
         <FcSearch className="text-2xl mr-2" />
-        <input placeholder="Search..." className="border-[1px] px-2 py-1 outline-none" />
+        <input onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search..." className="border-[1px] w-full px-2 py-1 outline-none" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
-        {sketchIndex.map((item) => (
+        {filteredSearch.map((item) => (
           <div className="p-1 border-[1px]">
             <div className="cursor-pointer" onClick={() => {
               navigate(`/sketch/${item.slug}`)
