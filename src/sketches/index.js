@@ -10,6 +10,8 @@ import nephroidHeaderImage from '../assets/nephroid.png'
 import timesTableAnimation from './times_table_animation/sketch'
 import timesTableAnimationImage from '../assets/times_table_animation.png'
 
+import mandelbrotSet from './mandelbrot_set/sketch'
+import mandelbrotHeaderImage from '../assets/mandelbrot_set.png'
 
 export const sketchIndex = [
   {
@@ -50,6 +52,16 @@ export const sketchIndex = [
     category: 'art',
     tags: 'fractals, generative art, three times table, animation',
     headerImg: timesTableAnimationImage,
+    similar: []
+  },
+  {
+    slug: 'mandelbrot_set',
+    name: 'Mandelbrot Set',
+    sketch: mandelbrotSet,
+    description: "The Mandelbrot set is a mesmerizing fractal discovered by Benoît B. Mandelbrot in 1980. Defined through a simple iterative process in the complex plane, it showcases an intricate and infinitely detailed pattern. Points within the set remain bounded and are colored black, while those outside it escape to infinity and display vibrant colors. This self-replicating fractal reveals captivating shapes at all levels of magnification, making it a symbol of the exquisite beauty and complexity found in mathematics and nature. Its visual appeal has sparked artistic inspiration and a fascination with the endless wonders hidden within its depths.",
+    category: 'art',
+    tags: 'fractals, generative art, mandelbrot set, bounded complex plane',
+    headerImg: mandelbrotHeaderImage,
     similar: []
   },
 ]

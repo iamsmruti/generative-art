@@ -28,3 +28,11 @@ html{
 .markdown > b {
   font-weight: 500;
 }
+
+.markdown a {
+  color: rgb(255, 133, 133)
+}
+
+.markdown a:hover{
+  text-decoration: underline;
+}
