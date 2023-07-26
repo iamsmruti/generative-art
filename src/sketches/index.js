@@ -19,6 +19,9 @@ import kochCurveHeaderImage from '../assets/koch_curve.png'
 import kochSnowflake from './koch_snowflake/sketch'
 import kochSnowflakeHeaderImage from '../assets/koch_snowflake.png'
 
+import simpleFractalTree from './simple_fractal_tree/sketch'
+import simpleFractalTreeHeaderImage from '../assets/simple_fractal_tree.png'
+
 export const sketchIndex = [
   {
     slug: 'sierpiensky_triangle',
@@ -88,6 +91,16 @@ export const sketchIndex = [
     category: 'art',
     tags: 'fractals, generative art, koch snowflake',
     headerImg: kochSnowflakeHeaderImage,
+    similar: []
+  },
+  {
+    slug: 'simple_fractal_tree',
+    name: 'Simple Fractal Tree',
+    sketch: simpleFractalTree,
+    description: "A fractal tree is a captivating mathematical construct that exhibits self-replicating patterns on multiple scales, resembling the intricate branches of a tree in nature. The concept of a fractal tree is derived from fractals, which are complex geometric shapes with repeating patterns regardless of the level of magnification. Each branch of a fractal tree serves as the foundation for smaller branches, which, in turn, create even tinier branches, forming an infinitely detailed and visually stunning structure.",
+    category: 'art',
+    tags: 'fractals, generative art, fractal tree',
+    headerImg: simpleFractalTreeHeaderImage,
     similar: []
   },
 ]

@@ -36,12 +36,13 @@ const SketchPage = () => {
       <p className="font-light">{sketch.description}</p>
 
       <div className="grid md:grid-cols-5 grid-cols-1 mt-10 gap-5">
-        <div className="border-[1px] md:col-span-2 col-span-1 max-h-[520px] flex justify-center items-center">
+        <div className="border-[1px] md:col-span-2 col-span-1 max-h-[520px] flex flex-col justify-center items-center">
           {sketchIndex.map((item) => (
-            <div>
+            <div className="relative">
               {item.slug === slug && <SketchContainer  setup={item.sketch.setup} draw={item.sketch.draw} />}
             </div>
           ))}
+          <div id="slider" />
         </div>
 
         <div className="md:col-span-3 col-span-1 md:mt-[-25px] md:sticky top-0 md:h-[100vh] md:overflow-scroll">
