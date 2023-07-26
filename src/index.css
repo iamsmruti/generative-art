@@ -36,3 +36,10 @@ html{
 .markdown a:hover{
   text-decoration: underline;
 }
+
+.markdown > blockquote {
+  margin-left: 0px;
+  padding-left: 1rem;
+  border-left: 4px solid rgb(226, 139, 139);
+  color: rgb(232, 98, 98);
+}
