@@ -52,3 +52,5 @@ function branch(len) {
 2. **Infinite Complexity**: While we can visually perceive only a few levels of branching, fractal trees possess infinite complexity, making them both intriguing and challenging to model.
 
 3. **Real-world Applications**: Fractal trees find practical applications in various fields. From computer graphics and animation to modeling natural phenomena like lightning and blood vessels, fractals help create realistic and visually stunning representations.
+
+Coding a fractal tree is a fascinating journey into the world of self-similarity and infinite complexity. By using recursion and basic geometric principles, we can create visually stunning representations that echo the beauty of nature's branching structures. As we venture further into the realm of fractals, we discover the harmonious interplay between mathematics and art, unlocking new possibilities in computer graphics, modeling, and creative expression.
