@@ -1,5 +1,5 @@
 let segments = []
-let depth = 6
+let depth = 5
 let currDepth = 0
 let isMobile = false
 
