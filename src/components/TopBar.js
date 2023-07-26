@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from "./Logo"
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const TopBar = () => {
   const pathname = useLocation().pathname

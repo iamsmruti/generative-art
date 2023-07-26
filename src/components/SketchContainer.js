@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Sketch from "react-p5"
 
-const SketchContainer = ({trigger, setup, draw}) => {
-  const [dummy, setDummy] = useState(0)
-  useEffect(() => {
-    setDummy(d => d + 1)
-  }, [trigger])
+const SketchContainer = ({setup, draw}) => {
   return <Sketch setup={setup} draw={draw} />
 }
 

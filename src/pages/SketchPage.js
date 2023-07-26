@@ -44,7 +44,7 @@ const SketchPage = () => {
           ))}
         </div>
 
-        <div className="md:col-span-3 col-span-1 md:mt-[-25px]">
+        <div className="md:col-span-3 col-span-1 md:mt-[-25px] md:sticky top-0 md:h-[100vh] md:overflow-scroll">
           <ReactMarkdown
             className="markdown" 
             children={markdown} 

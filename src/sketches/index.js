@@ -13,6 +13,12 @@ import timesTableAnimationImage from '../assets/times_table_animation.png'
 import mandelbrotSet from './mandelbrot_set/sketch'
 import mandelbrotHeaderImage from '../assets/mandelbrot_set.png'
 
+import kochCurve from './koch_curve/sketch'
+import kochCurveHeaderImage from '../assets/koch_curve.png'
+
+import kochSnowflake from './koch_snowflake/sketch'
+import kochSnowflakeHeaderImage from '../assets/koch_snowflake.png'
+
 export const sketchIndex = [
   {
     slug: 'sierpiensky_triangle',
@@ -62,6 +68,26 @@ export const sketchIndex = [
     category: 'art',
     tags: 'fractals, generative art, mandelbrot set, bounded complex plane',
     headerImg: mandelbrotHeaderImage,
+    similar: []
+  },
+  {
+    slug: 'koch_curve',
+    name: 'Koch Curve',
+    sketch: kochCurve,
+    description: "The Koch curve, also known as the Koch snowflake curve, is a remarkable fractal that showcases the enchanting world of self-replicating patterns. It is derived from the Koch snowflake by considering only one of its sides. The construction process involves iteratively replacing each line segment with four smaller segments, forming a jagged, infinitely repeating curve. This process continually increases the curve's length while retaining its intricate self-similarity.",
+    category: 'art',
+    tags: 'fractals, generative art, koch curve',
+    headerImg: kochCurveHeaderImage,
+    similar: []
+  },
+  {
+    slug: 'koch_snowflake',
+    name: 'Koch Snowflake',
+    sketch: kochSnowflake,
+    description: "The Koch snowflake is a fascinating and iconic fractal pattern that showcases the beauty of self-similarity and infinite complexity. It is constructed by iteratively replacing each straight line segment of an equilateral triangle with smaller segments, forming a pattern that resembles a snowflake. Named after the Swedish mathematician Helge von Koch, this fractal exhibits an intricate, infinitely repeating geometric structure. Despite its simple initial shape, the Koch snowflake's boundary becomes increasingly jagged and intricate with each iteration, highlighting the remarkable nature of fractals in mathematics and the mesmerizing intricacy of nature's patterns.",
+    category: 'art',
+    tags: 'fractals, generative art, koch snowflake',
+    headerImg: kochSnowflakeHeaderImage,
     similar: []
   },
 ]
