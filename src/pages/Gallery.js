@@ -31,7 +31,7 @@ const Gallery = () => {
     <div>
       <div className="mb-5 flex items-center">
         <FcSearch className="text-2xl mr-2" />
-        <input onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search..." className="border-[1px] w-full px-2 py-1 outline-none" />
+        <input onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search..." className="border-[1px] w-full px-2 py-1 max-w-[300px] outline-none" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
         {filteredSearch.map((item) => (
@@ -71,9 +71,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
-{
-  /* <Link to={`/sketch/${item.slug}`}>
-            {item.name}
-          </Link> */
-}
