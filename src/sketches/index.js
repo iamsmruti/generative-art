@@ -25,6 +25,9 @@ import simpleFractalTreeHeaderImage from '../assets/simple_fractal_tree.png'
 import juliaSet from './julia_set/sketch'
 import juliaSetHeaderImage from '../assets/julia_set.png'
 
+import sierpienskyCarpet from './sierpiensky_carpet/sketch'
+import sierpienskyCarpetHeaderImage from '../assets/sierpiensky_carpet.png'
+
 export const sketchIndex = [
   {
     slug: 'sierpiensky_triangle',
@@ -114,6 +117,16 @@ export const sketchIndex = [
     category: 'art',
     tags: 'fractals, generative art, Julia Set',
     headerImg: juliaSetHeaderImage,
+    similar: []
+  },
+  {
+    slug: 'sierpiensky_carpet',
+    name: 'Sierpiensky Carpet',
+    sketch: sierpienskyCarpet,
+    description: "The Sierpiensky Carpet is constructed by iteratively dividing a square into nine smaller squares and removing the central one, then repeating the process on the remaining squares ad infinitum. The result is a stunning pattern resembling a woven carpet with intricate holes and voids at various scales. This mesmerizing fractal has captured the imagination of mathematicians and artists alike, highlighting the beauty and wonder of mathematics in nature and art.",
+    category: 'art',
+    tags: 'fractals, generative art, Sierpiensky Carpet',
+    headerImg: sierpienskyCarpetHeaderImage,
     similar: []
   },
 ]
