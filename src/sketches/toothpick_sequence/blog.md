@@ -1,13 +1,10 @@
 The toothpick sequence is a mathematical and geometric pattern that involves repeatedly adding toothpicks to a set of existing toothpicks based on specific rules. It was popularized by the mathematician Martin Gardner in his column in the August 1971 issue of Scientific American.
 
-Here are the rules for generating the toothpick sequence:
-
-1. Start with a single horizontal toothpick as the initial configuration.
-At each step, every existing toothpick is replaced by a specific pattern of toothpicks:
-2. Each horizontal toothpick generates two vertical toothpicks, one above and one below it.
-3. Each vertical toothpick generates three horizontal toothpicks: one to its left, one to its right, and one above it.
-4. Repeat the process, applying the rules to all the toothpicks generated in each step.
-5. The toothpick sequence exhibits interesting properties and can grow quite rapidly, forming intricate patterns. As more and more iterations are performed, the number of toothpicks and their arrangement becomes increasingly complex.
+A two-dimensional arrangement of toothpicks is constructed by the following iterative procedure. 
+1. At stage 1, place a single toothpick of length 1
+on a square grid, aligned with the y-axis. 
+2. At each subsequent stage, for every exposed toothpick end, place a perpendicular toothpick centered at that end. 
+3. The resulting structure has a fractal-like appearance.
 
 #### Here is how we can simulate the sequence
 ```js
