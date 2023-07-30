@@ -33,7 +33,7 @@ const Gallery = () => {
         <FcSearch className="text-2xl mr-2" />
         <input onChange={(e) => setSearchQuery(e.target.value)} placeholder="Search..." className="border-[1px] w-full px-2 py-1 max-w-[300px] outline-none" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mb-5">
         {filteredSearch.map((item) => (
           <div className="p-1 border-[1px]">
             <div className="cursor-pointer" onClick={() => {

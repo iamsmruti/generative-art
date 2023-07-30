@@ -28,6 +28,9 @@ import juliaSetHeaderImage from '../assets/julia_set.png'
 import sierpienskyCarpet from './sierpiensky_carpet/sketch'
 import sierpienskyCarpetHeaderImage from '../assets/sierpiensky_carpet.png'
 
+import toothpickSequence from './toothpick_sequence/sketch'
+import toothpickSequenceHeaderImage from '../assets/toothpick_sequence.png'
+
 export const sketchIndex = [
   {
     slug: 'sierpiensky_triangle',
@@ -127,6 +130,16 @@ export const sketchIndex = [
     category: 'art',
     tags: 'fractals, generative art, Sierpiensky Carpet',
     headerImg: sierpienskyCarpetHeaderImage,
+    similar: []
+  },
+  {
+    slug: 'toothpick_sequence',
+    name: 'Toothpick Sequence',
+    sketch: toothpickSequence,
+    description: "The toothpick sequence is a visually intriguing mathematical pattern that involves the repetitive addition of toothpicks following specific rules. Starting with a single vertical toothpick, each step generates new toothpicks based on simple instructions. As the process iterates, the number of toothpicks grows exponentially, forming intricate and self-similar structures with fractal characteristics.",
+    category: 'art',
+    tags: 'fractals, generative art, Toothpick Sequence',
+    headerImg: toothpickSequenceHeaderImage,
     similar: []
   },
 ]
